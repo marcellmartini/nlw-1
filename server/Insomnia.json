@@ -1,0 +1,183 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-06-03T03:35:54.263Z",
+  "__export_source": "insomnia.desktop.app:v7.1.1",
+  "resources": [
+    {
+      "_id": "req_29b63bb1856443d0b76157ef301be297",
+      "authentication": {},
+      "body": {},
+      "created": 1591139434352,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1591153264570.5,
+      "method": "GET",
+      "modified": 1591155257304,
+      "name": "Listar items",
+      "parameters": [],
+      "parentId": "fld_d574263f5f8340c9b53f580a1ee5e5e8",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3333/items",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_d574263f5f8340c9b53f580a1ee5e5e8",
+      "created": 1591155240316,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1591155246019,
+      "modified": 1591155268069,
+      "name": "Items",
+      "parentId": "wrk_b7895ef4c1cc460480b08d90d8f5de45",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_b7895ef4c1cc460480b08d90d8f5de45",
+      "created": 1591139251683,
+      "description": "",
+      "modified": 1591139251683,
+      "name": "NLW-1",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_e14d697c795d4e3abebdb871b99c44bc",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Mercado Sr. Marcell\",\n\t\"email\": \"contato@imperatriz.com.br\",\n\t\"whatsapp\": \"92912345678\",\n\t\"latitude\": \"3.1190\",\n\t\"longitude\": \"60.0217\",\n\t\"city\": \"Manaus\",\n\t\"uf\": \"AM\",\n\t\"number\": \"700\",\n\t\"items\": [\n\t\t1\n\t]\n}"
+      },
+      "created": 1591148464196,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_6665a2c9a7ca4a27963093672d561934",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1588167084298,
+      "method": "POST",
+      "modified": 1591155263751,
+      "name": "Criar ponto de coleta",
+      "parameters": [],
+      "parentId": "fld_7418626a4a7e4cd79d18aac85d233a66",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3333/points",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_7418626a4a7e4cd79d18aac85d233a66",
+      "created": 1591155245969,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1591155245969,
+      "modified": 1591155245969,
+      "name": "Points",
+      "parentId": "wrk_b7895ef4c1cc460480b08d90d8f5de45",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_c8ae86c20fd642e597b9eca2fd7a06c5",
+      "authentication": {},
+      "body": {},
+      "created": 1591152467547,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1588167084273,
+      "method": "GET",
+      "modified": 1591155266397,
+      "name": "Lista pontos filtrados",
+      "parameters": [
+        {
+          "description": "",
+          "id": "pair_42875f19a4284adf894ad2f33a18426b",
+          "name": "city",
+          "value": "Manaus"
+        },
+        {
+          "description": "",
+          "id": "pair_25abaec0ee704513b493c0ac6de91c12",
+          "name": "uf",
+          "value": "AM"
+        },
+        {
+          "description": "",
+          "id": "pair_8c1bfa1cafa44946b6c5116a2e8f5788",
+          "name": "items",
+          "value": "6"
+        }
+      ],
+      "parentId": "fld_7418626a4a7e4cd79d18aac85d233a66",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3333/points",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9bfa836bedbe420c8803fd14ddc7df8a",
+      "authentication": {},
+      "body": {},
+      "created": 1591151592518,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1588167084248,
+      "method": "GET",
+      "modified": 1591155265239,
+      "name": "Lista ponto específico",
+      "parameters": [],
+      "parentId": "fld_7418626a4a7e4cd79d18aac85d233a66",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3333/points/1",
+      "_type": "request"
+    },
+    {
+      "_id": "env_4aa27fa3db42c73631cdf2b46125c1c0026c35e4",
+      "color": null,
+      "created": 1591139251763,
+      "data": {},
+      "dataPropertyOrder": null,
+      "isPrivate": false,
+      "metaSortKey": 1591139251763,
+      "modified": 1591139251763,
+      "name": "Base Environment",
+      "parentId": "wrk_b7895ef4c1cc460480b08d90d8f5de45",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_4aa27fa3db42c73631cdf2b46125c1c0026c35e4",
+      "cookies": [],
+      "created": 1591139251765,
+      "modified": 1591139251765,
+      "name": "Default Jar",
+      "parentId": "wrk_b7895ef4c1cc460480b08d90d8f5de45",
+      "_type": "cookie_jar"
+    }
+  ]
+}
